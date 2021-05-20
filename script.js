@@ -151,7 +151,7 @@ function setWinner( winner, winningLine )
     }
     else 
     {
-        highlighttie(winningLine)
+        highlightWinner(winningLine)
         document.getElementById("status").innerHTML = "Unendschiden";
         document.getElementById("card").style.backgroundColor = "Black";
     }
@@ -172,8 +172,7 @@ function highlightlost( winningLine)
 }
 
 
-   
-}
+
 function reset()
 {
     field = ["e","e","e","e","e","e","e","e","e"];
