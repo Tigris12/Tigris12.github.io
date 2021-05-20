@@ -151,7 +151,6 @@ function setWinner( winner, winningLine )
     }
     else 
     {
-        highlightWinner(winningLine)
         document.getElementById("status").innerHTML = "Unendschiden";
         document.getElementById("card").style.backgroundColor = "Black";
     }
