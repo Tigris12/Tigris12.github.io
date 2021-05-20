@@ -132,7 +132,6 @@ function checkForWinner()
         setWinner( "d" );
     }
 }
-
 function setWinner( winner, winningLine )
 {
     isGameRunning = false;
@@ -155,23 +154,18 @@ function setWinner( winner, winningLine )
         document.getElementById("card").style.backgroundColor = "Black";
     }
 }
-
 function highlightWinner( winningLine)
 {
     document.getElementById( winningLine[0] ).style.backgroundColor = "darkgreen";
     document.getElementById( winningLine[1] ).style.backgroundColor = "darkgreen";
     document.getElementById( winningLine[2] ).style.backgroundColor = "darkgreen";
 }
-
 function highlightlost( winningLine)
 {
     document.getElementById( winningLine[0] ).style.backgroundColor = "red";
     document.getElementById( winningLine[1] ).style.backgroundColor = "red";
     document.getElementById( winningLine[2] ).style.backgroundColor = "red";
 }
-
-
-
 function reset()
 {
     field = ["e","e","e","e","e","e","e","e","e"];
@@ -180,12 +174,10 @@ function reset()
     {
         document.getElementById( i ).innerHTML = "";
         document.getElementById( i ).style.backgroundColor = "white";
-
     }
 
     document.getElementById("status").innerHTML = "Bereit zum spelen!";
     document.getElementById("card").style.backgroundColor = "darkorange";
 
     isGameRunning = true;
-
 }
